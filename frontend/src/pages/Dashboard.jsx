@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { summaryAPI, categoryAPI, transactionAPI } from '../services/api';
-import { Navbar } from '../components/Navbar';
-import { TransactionForm } from '../components/TransactionForm';
-import { TransactionList } from '../components/TransactionList';
+import { Navbar } from '../components/Navbar.jsx';
+import { TransactionForm } from '../components/TransactionForm.jsx';
+import { TransactionList } from '../components/TransactionList.jsx';
 
 export const Dashboard = () => {
   const [summary, setSummary] = useState(null);
